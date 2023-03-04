@@ -42,6 +42,8 @@ button:active {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color2);
+position: sticky;
+top: 0;
 }
 
 .container {

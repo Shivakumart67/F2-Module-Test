@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title  -->
+    <title>F2 Module Test</title>
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <h4 class="header_title">Blogging Website</h4>
+      </div>
+      <div>
+        <button class="header_btn button">Create New Post</button>
+      </div>
+      <!-- <div id="datetime"></div> -->
+    </header>
+
+    <!-- Main Section to Add the Blogs Dynamically -->
+    <main id="main">
+      <!-- Blog Container -->
+    </main>
+
+    <!-- Form Design -->
+    <div class="form_container">
+      <div class="form_top">
+        <h4>Create A Post</h4>
+        <div id="cancel_icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="input_contaner">
+        <form>
+          <input
+            type="text"
+            class="heading_input"
+            placeholder="Enter Your Heading...."
+          />
+
+          <textarea
+            class="textarea"
+            name="textarea"
+            id="textarea"
+            cols=""
+            rows="10"
+            placeholder="Enter Your Blog Post..."
+          ></textarea>
+        </form>
+
+        <div>
+          <button class="form_button form_button_publish button">
+            Publish Post
+          </button>
+          <button class="form_button form_button_cancel button">
+            Cancel Post
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Edit Design -->
+    <div class="edit_container">
+      <div class="edit_top">
+        <h4>Edit A Post</h4>
+        <div id="edit_cancel_icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="edit_input_contaner">
+        <form>
+          <input
+            type="text"
+            class="edit_input"
+            placeholder="Enter Your Heading...."
+          />
+
+          <textarea
+            class="edit_textarea"
+            name="textarea"
+            id="edit_textarea"
+            cols=""
+            rows="10"
+            placeholder="Enter Your Blog Post..."
+          ></textarea>
+        </form>
+
+        <div>
+          <button class="form_button save_post_button button">Save Post</button>
+          <button class="form_button edit_delete_post_button button">
+            Delete post
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Form Design -->
+    <!-- <div id="shiva">
+        <textarea name="shiva" id="ta" cols="30" rows="10"></textarea>
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

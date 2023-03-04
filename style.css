@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+:root {
+  --color1: #111111;
+  --color2: #1e1e1e;
+  --font: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color1);
+  color: #fff;
+  position: relative;
+}
+
+button {
+  border: 1px solid #fff;
+  padding: 8px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #383636;
+}
+
+button:active {
+  background-color: #141212;
+}
+
+.header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+}
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.main_button_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.time {
+  justify-self: flex-end;
+  margin-left: auto;
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.main_button_container button:first-child {
+  margin-right: 2%;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form_button {
+  color: #333333 !important;
+  border: 1px solid #333333;
+  margin-bottom: 30px;
+}
+
+.form_button:first-child {
+  margin-right: 5%;
+}
+
+.form_button:hover {
+  background-color: #d6d5d5 !important;
+}
+
+.form_container {
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 80%;
+  height: auto;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #333333 !important;
+  box-shadow: 2px 2px 20px black;
+  display: none;
+  filter: none;
+  pointer-events: auto;
+  -webkit-filter: none;
+}
+
+.form_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.heading_input,
+.textarea {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.input_contaner {
+  padding: 0 40px;
+}
+
+.heading_input:focus,
+.textarea:focus {
+  outline: none;
+}
+
+#cancel_icon {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#cancel_icon:hover {
+  transform: scale(1.3);
+  color: rgb(221, 71, 71);
+}
+
+/* #shiva {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+} */
+
+.edit_container {
+  position: absolute;
+  background-color: #e3e3e3;
+  width: 80%;
+  height: auto;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #333333 !important;
+  box-shadow: 2px 2px 20px black;
+  display: none;
+}
+
+.edit_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.edit_input,
+.edit_textarea {
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.edit_input_contaner {
+  padding: 0 40px;
+}
+
+.edit_input:focus,
+.edit_textarea:focus {
+  outline: none;
+}
+
+#edit_cancel_icon {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#edit_cancel_icon:hover {
+  transform: scale(1.3);
+  color: rgb(221, 71, 71);
+}
+
+@media screen and (max-width: 500px) {
+  button {
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  .time {
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+    margin-left: auto;
+    font-weight: 200;
+    font-size: 8px;
+    /* margin-top: 10px; */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  button {
+    border: 1px solid #fff;
+    padding: 5px 8px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+
+  .time {
+    justify-self: flex-end;
+    /* align-self: flex-end; */
+    margin-left: auto;
+    font-weight: 200;
+    font-size: 8px;
+    margin-top: 10px;
+  }
+}
+
+/* body.blur {
+    filter: blur(2px);
+    pointer-events: none;
+} */
+/* TO Make a Blur Action and restricting the pointer events */
+body.blur > *:not(.form_container, .edit_container) {
+  pointer-events: none;
+  filter: blur(1.5px);
+}
